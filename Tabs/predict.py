@@ -17,7 +17,8 @@ def app(df, X, y):
     st.markdown(
         """
             <p style="font-size:25px">
-                This app uses <b style="color:green">Decision Tree Classifier</b> for the Prediction of Stress Level.
+                This app uses  for the Prediction of Stress Level.
+                Kindly input all relevant information to obtain your stress level. <b style="color:orange">This stress level has to be provided as an input to our website to proceed with your therapy.</b>
             </p>
         """, unsafe_allow_html=True)
     
@@ -50,10 +51,8 @@ def app(df, X, y):
             st.success("The person has low stress level 🙂")
         elif (prediction == 2):
             st.warning("The person has medium stress level 😐")
-        elif (prediction == 3):
+        elif (prediction == 3 or prediction == 4):
             st.error("The person has high stress level! 😞")
-        elif (prediction == 4):
-            st.error("The person has very high stress level!! 😫")
         else:
             st.success("The person is stress free and calm 😄")
 
