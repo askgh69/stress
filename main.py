@@ -7,7 +7,7 @@ import streamlit as st
 from web_functions import load_data
 
 # Import pages
-from Tabs import home, data, predict, visualise
+from Tabs import predict
 
 # Configure the app
 st.set_page_config(
