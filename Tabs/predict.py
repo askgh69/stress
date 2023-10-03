@@ -17,7 +17,6 @@ def app(df, X, y):
     st.markdown(
         """
             <p style="font-size:25px">
-                This app uses  for the Prediction of Stress Level.
                 Kindly input all relevant information to obtain your stress level. <b style="color:orange">This stress level has to be provided as an input to our website to proceed with your therapy.</b>
             </p>
         """, unsafe_allow_html=True)
