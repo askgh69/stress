@@ -47,11 +47,13 @@ def app(df, X, y):
 
         # Print the output according to the prediction
         if (prediction == 1):
-            st.success("The person has low stress level 🙂")
+            st.success("The person has a low stress level 🙂")
         elif (prediction == 2):
-            st.warning("The person has medium stress level 😐")
-        elif (prediction == 3 or prediction == 4):
-            st.error("The person has high stress level! 😞")
+            st.warning("The person has a medium stress level 😐")
+        elif (prediction == 3):
+            st.error("The person has a high stress level! 😞")
+        elif (prediction == 4):
+            st.error("The person has a very high stress level! 😥")
         else:
             st.success("The person is stress free and calm 😄")
 
